@@ -17,7 +17,8 @@ public class Card {
         // Commencez à distribuer les deux premières cartes aux joueurs
  
         while ("y".equals(playAgain)) {
-            // dealers first two random cards
+            // les deux premières cartes aléatoires du croupier
+
             dCard1 = random.nextInt(10) + 1;
             dCard2 = random.nextInt(10) + 1;
  
