@@ -14,23 +14,23 @@ public class Card {
  
         Random random = new Random();
  
-        // Begin dealing the players first two cards
+        // Commencez à distribuer les deux premières cartes aux joueurs
  
         while ("y".equals(playAgain)) {
             // dealers first two random cards
             dCard1 = random.nextInt(10) + 1;
             dCard2 = random.nextInt(10) + 1;
  
-            // players first two random cards and card total
+            // les deux premières cartes aléatoires des joueurs et le total des cartes
             card1 = random.nextInt(10) + 1;
             card2 = random.nextInt(10) + 1;
             cardTotal = card1 + card2;
  
-            // dealers two card total and display only one dealer card
+            
             dTotal = dCard1 + dCard2;
             System.out.println("Dealer montre: " + dCard1);
  
-            // display players first two cards & card total
+            // afficher les deux premières cartes des joueurs et le total des cartes
             System.out.println("Premiere Carte: " + card1 + ", " + card2);
             System.out.println("Totale: " + cardTotal);
  
@@ -44,7 +44,7 @@ public class Card {
                 System.out.println("Totale: " + cardTotal);
  
                 if (cardTotal > 21) {
-                    System.out.println("Perdu, Dealer a gagn�");
+                    System.out.println("Perdu, Dealer a gagné");
                     System.out.println("Voulez vous jouer encore? (y/n):");
                     playAgain = keyboard.nextLine();
                 }
