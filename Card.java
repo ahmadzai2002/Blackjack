@@ -29,7 +29,7 @@ public class Card {
  
             
             dTotal = dCard1 + dCard2;
-            System.out.println("Dealer montre: " + dCard1);
+            System.out.println("Croupier montre: " + dCard1);
  
             // afficher les deux premières cartes des joueurs et le total des cartes
             System.out.println("Premiere Carte: " + card1 + ", " + card2);
@@ -45,7 +45,7 @@ public class Card {
                 System.out.println("Totale: " + cardTotal);
  
                 if (cardTotal > 21) {
-                    System.out.println("Perdu, Dealer a gagné");
+                    System.out.println("Perdu, croupier a gagné");
                     System.out.println("Voulez vous jouer encore? (y/n):");
                     playAgain = keyboard.nextLine();
                 }
@@ -56,7 +56,7 @@ public class Card {
                 anotherCard = keyboard.nextLine();
                  
                 if ("n".equals(anotherCard))
-                    System.out.println("Dealer avait: " + dTotal);
+                    System.out.println("croupier avait: " + dTotal);
                  
                 System.out.println("Tu avais: " + cardTotal);
  
